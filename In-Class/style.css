@@ -3,19 +3,19 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff;
     color: #333;
     line-height: 1.6;
 }
 
-/* Navbar Style */
 .navbar {
     list-style: none;
     margin: 0;
-    padding: 10px;
-    background-color: #333;
+    padding: 15px;
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
     display: flex;
     justify-content: space-around;
+    border-radius: 0 0 10px 10px;
 }
 
 .navbar li {
@@ -25,77 +25,123 @@ body {
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 18px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    background-color: #90e0ef;
+    color: #0077b6;
 }
 
-/* Profile Image Style */
 .profile-image {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .profile-image img {
-    width: 200px;
+    width: 220px;
     height: auto;
     border-radius: 50%;
-    border: 5px solid #333;
+    border: 6px solid #0077b6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image figcaption {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 18px;
     color: #555;
 }
 
-/* Section Style */
 section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
 }
 
 section h2 {
-    font-size: 28px;
-    color: #333;
-    border-bottom: 2px solid #ddd;
+    font-size: 30px;
+    color: #0077b6;
+    border-bottom: 2px solid #00b4d8;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 section p {
     font-size: 16px;
     color: #666;
+    line-height: 1.8;
 }
 
-/* Hobbies Section */
 .hobby-images {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .hobby-images img {
-    width: 150px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hobby-images img:hover {
     transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Smooth scrolling */
+.back-to-top {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0077b6;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+    background-color: #00b4d8;
+}
+
+.image-1, .image-2, .image-3 {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-1:hover, .image-2:hover, .image-3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.image-1:hover {
+    content: url('./Imgs/fort.gif');
+}
+
+.image-2:hover {
+    content: url('./Imgs/sa.gif');
+}
+
+.image-3:hover {
+    content: url('./Imgs/giphy.gif');
+}
+
 html {
     scroll-behavior: smooth;
 }
