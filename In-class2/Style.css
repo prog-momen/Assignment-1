@@ -10,25 +10,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
-    overflow: hidden;
+    background-color: #f4f4f4; /* Body background can remain neutral or can be removed */
 }
 
 .container {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
-}
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    background-color: transparent; /* Blank background initially */
-    transition: background-color 0.4s ease;
+    padding: 20px;
 }
 
 .gallery {
@@ -37,7 +28,6 @@ body {
     justify-content: space-around;
     max-width: 1000px;
     gap: 20px;
-    padding: 20px;
     width: 100%;
 }
 
@@ -83,23 +73,6 @@ body {
 
 .item:hover .description {
     opacity: 1;
-}
-
-/* Change the background color on hover using sibling selectors */
-.item:nth-child(1):hover ~ .background {
-    background-color: #ff9999;
-}
-
-.item:nth-child(2):hover ~ .background {
-    background-color: #99ccff;
-}
-
-.item:nth-child(3):hover ~ .background {
-    background-color: #ffcc66;
-}
-
-.item:nth-child(4):hover ~ .background {
-    background-color: #ccff99;
 }
 
 @media (max-width: 768px) {
