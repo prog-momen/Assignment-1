@@ -25,7 +25,7 @@ body {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-around;
     max-width: 1000px;
     gap: 20px;
     width: 100%;
@@ -55,7 +55,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    color: rgb(0, 233, 70);
     font-size: 24px;
     text-align: center;
     padding: 15px;
