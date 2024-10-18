@@ -1,0 +1,10 @@
+*{
+    text-align: center;
+}
+body{
+    display: flex;
+    height: auto;
+    width: 200px;
+    justify-content: center;
+    flex-direction: column;
+}
